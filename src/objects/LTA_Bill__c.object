@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Lightning_Bill_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Lightning_Bill_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>Compact_Bill_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Compact_Bill_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Link__c</fields>
+        <fields>Bill_Session__c</fields>
+        <fields>Status__c</fields>
+        <label>Compact Bill Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object houses all Legislative Bill data from Telicon.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Bill_Author__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill Author</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_Caption__c</fullName>
+        <description>Brief summary of the proposed bill.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Read-only official caption, automatically updated providing a brief summary of the proposed bill.</inlineHelpText>
+        <label>Bill Caption</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Bill_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill Number</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_Session__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill Session</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_Summary__c</fullName>
+        <description>State Legislative Affairs&apos; (Tier A) completed Bill Summary.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>State Legislative Affairs&apos; completed Bill Summary.</inlineHelpText>
+        <label>Bill Summary</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Bill_Type__c</fullName>
+        <description>Indicated Session Number for this Bill Version.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicated Session Number for this Bill Version.</inlineHelpText>
+        <label>Bill Type</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_Version__c</fullName>
+        <description>Up to 6 versions from the Telicon data feed record.</description>
+        <externalId>false</externalId>
+        <label>Bill Version</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>FIL</fullName>
+                    <default>false</default>
+                    <label>1 - Filed</label>
+                </value>
+                <value>
+                    <fullName>HCS</fullName>
+                    <default>false</default>
+                    <label>2 - House Committee Substitute</label>
+                </value>
+                <value>
+                    <fullName>ENG</fullName>
+                    <default>false</default>
+                    <label>3 - Engrossed</label>
+                </value>
+                <value>
+                    <fullName>SCS</fullName>
+                    <default>false</default>
+                    <label>4 - Senate Committee Substitute</label>
+                </value>
+                <value>
+                    <fullName>CCR</fullName>
+                    <default>false</default>
+                    <label>5 - Conference Committee Report</label>
+                </value>
+                <value>
+                    <fullName>ENR</fullName>
+                    <default>false</default>
+                    <label>6 - As Finally Passed (Enrolled)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CB1Name__c</fullName>
+        <externalId>false</externalId>
+        <label>C1 Bill</label>
+        <length>13</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CB1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Similar or identical legislation that is introduced in the Senate and the House.</description>
+        <externalId>false</externalId>
+        <label>CB1</label>
+        <referenceTo>LTA_Bill__c</referenceTo>
+        <relationshipLabel>TxDOT Tracked Bills (CB1)</relationshipLabel>
+        <relationshipName>Companion_Biills_1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CB2Name__c</fullName>
+        <externalId>false</externalId>
+        <label>C2 Bill</label>
+        <length>13</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CB2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Similar or identical legislation that is introduced in the Senate and the House.</description>
+        <externalId>false</externalId>
+        <label>CB2</label>
+        <referenceTo>LTA_Bill__c</referenceTo>
+        <relationshipName>Companion_Bills_2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CB3Name__c</fullName>
+        <externalId>false</externalId>
+        <label>C3 Bill</label>
+        <length>13</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CB3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Similar or identical legislation that is introduced in the Senate and the House.</description>
+        <externalId>false</externalId>
+        <label>CB3</label>
+        <referenceTo>LTA_Bill__c</referenceTo>
+        <relationshipName>Companion_Bills_3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Corollary_Division_s__c</fullName>
+        <description>Indicates which Division(s) has secondary responsibility for this bill.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates which Division(s) has secondary responsibility for this bill.</inlineHelpText>
+        <label>Corollary Division(s)</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>AUD</fullName>
+                    <default>false</default>
+                    <label>AUD</label>
+                </value>
+                <value>
+                    <fullName>AVN</fullName>
+                    <default>false</default>
+                    <label>AVN</label>
+                </value>
+                <value>
+                    <fullName>BRG</fullName>
+                    <default>false</default>
+                    <label>BRG</label>
+                </value>
+                <value>
+                    <fullName>CIV</fullName>
+                    <default>false</default>
+                    <label>CIV</label>
+                </value>
+                <value>
+                    <fullName>CMD</fullName>
+                    <default>false</default>
+                    <label>CMD</label>
+                </value>
+                <value>
+                    <fullName>CMP</fullName>
+                    <default>false</default>
+                    <label>CMP</label>
+                </value>
+                <value>
+                    <fullName>CSD</fullName>
+                    <default>false</default>
+                    <label>CSD</label>
+                </value>
+                <value>
+                    <fullName>CST</fullName>
+                    <default>false</default>
+                    <label>CST</label>
+                </value>
+                <value>
+                    <fullName>DES</fullName>
+                    <default>false</default>
+                    <label>DES</label>
+                </value>
+                <value>
+                    <fullName>ENV</fullName>
+                    <default>false</default>
+                    <label>ENV</label>
+                </value>
+                <value>
+                    <fullName>FED</fullName>
+                    <default>false</default>
+                    <label>FED</label>
+                </value>
+                <value>
+                    <fullName>FIN</fullName>
+                    <default>false</default>
+                    <label>FIN</label>
+                </value>
+                <value>
+                    <fullName>FOD</fullName>
+                    <default>false</default>
+                    <label>FOD</label>
+                </value>
+                <value>
+                    <fullName>GCD</fullName>
+                    <default>false</default>
+                    <label>GCD</label>
+                </value>
+                <value>
+                    <fullName>HRD</fullName>
+                    <default>false</default>
+                    <label>HRD</label>
+                </value>
+                <value>
+                    <fullName>ITD</fullName>
+                    <default>false</default>
+                    <label>ITD</label>
+                </value>
+                <value>
+                    <fullName>MNT</fullName>
+                    <default>false</default>
+                    <label>MNT</label>
+                </value>
+                <value>
+                    <fullName>MRD</fullName>
+                    <default>false</default>
+                    <label>MRD</label>
+                </value>
+                <value>
+                    <fullName>MTD</fullName>
+                    <default>false</default>
+                    <label>MTD</label>
+                </value>
+                <value>
+                    <fullName>OCC</fullName>
+                    <default>false</default>
+                    <label>OCC</label>
+                </value>
+                <value>
+                    <fullName>PEPS</fullName>
+                    <default>false</default>
+                    <label>PEPS</label>
+                </value>
+                <value>
+                    <fullName>PFD</fullName>
+                    <default>false</default>
+                    <label>PFD</label>
+                </value>
+                <value>
+                    <fullName>PRO</fullName>
+                    <default>false</default>
+                    <label>PRO</label>
+                </value>
+                <value>
+                    <fullName>PTN</fullName>
+                    <default>false</default>
+                    <label>PTN</label>
+                </value>
+                <value>
+                    <fullName>ROW</fullName>
+                    <default>false</default>
+                    <label>ROW</label>
+                </value>
+                <value>
+                    <fullName>RRD</fullName>
+                    <default>false</default>
+                    <label>RRD</label>
+                </value>
+                <value>
+                    <fullName>RTI</fullName>
+                    <default>false</default>
+                    <label>RTI</label>
+                </value>
+                <value>
+                    <fullName>SLA</fullName>
+                    <default>false</default>
+                    <label>SLA</label>
+                </value>
+                <value>
+                    <fullName>SSD</fullName>
+                    <default>false</default>
+                    <label>SSD</label>
+                </value>
+                <value>
+                    <fullName>STR</fullName>
+                    <default>false</default>
+                    <label>STR</label>
+                </value>
+                <value>
+                    <fullName>TOD</fullName>
+                    <default>false</default>
+                    <label>TOD</label>
+                </value>
+                <value>
+                    <fullName>TPD</fullName>
+                    <default>false</default>
+                    <label>TPD</label>
+                </value>
+                <value>
+                    <fullName>TPP</fullName>
+                    <default>false</default>
+                    <label>TPP</label>
+                </value>
+                <value>
+                    <fullName>TRF</fullName>
+                    <default>false</default>
+                    <label>TRF</label>
+                </value>
+                <value>
+                    <fullName>TRV</fullName>
+                    <default>false</default>
+                    <label>TRV</label>
+                </value>
+                <value>
+                    <fullName>TTC</fullName>
+                    <default>false</default>
+                    <label>TTC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Date_LBB_Fiscal_Impact_Statement_Due__c</fullName>
+        <description>This indicates when the Fiscal Impact Statement needs to be completed and uploaded to the bill.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This indicates when the Fiscal Impact Statement needs to be completed and uploaded to the bill.</inlineHelpText>
+        <label>Date LBB FIS Due</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Due_Date__c</fullName>
+        <description>Indicates when the Final Analysis is due for this Bill Version.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates when the Final Analysis is due for this Bill Version.</inlineHelpText>
+        <label>Due Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Fiscal_Impact_Summary__c</fullName>
+        <description>State Legislative Affairs&apos; (Tier A) Fiscal Impact &amp; Analysis Summary.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>State Legislative Affairs&apos; Fiscal Impact &amp; Analysis Summary.</inlineHelpText>
+        <label>Fiscal Impact Summary</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Impact__c</fullName>
+        <description>Indicates the proposed bill&apos;s impact categorization.</description>
+        <externalId>false</externalId>
+        <label>Impact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 - Significant</fullName>
+                    <default>false</default>
+                    <label>1 - Significant</label>
+                </value>
+                <value>
+                    <fullName>2 - Moderate</fullName>
+                    <default>false</default>
+                    <label>2 - Moderate</label>
+                </value>
+                <value>
+                    <fullName>3 - Low</fullName>
+                    <default>false</default>
+                    <label>3 - Low</label>
+                </value>
+                <value>
+                    <fullName>4 - No Direct Impact</fullName>
+                    <default>false</default>
+                    <label>4 - No Direct Impact</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LBB_Fiscal_Impact_Statement_Requested__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field indicates that the Fiscal Impact Summary is required for this bill and will initiate an email alert and task assignment.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates that the Fiscal Impact Summary is required for this bill and will initiate an email alert and task assignment.</inlineHelpText>
+        <label>LBB FIS Requested</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LBB_Fiscal_Impact_Statement_Submitted__c</fullName>
+        <description>This field indicates when the Fiscal Impact Summary was processed and uploaded to this bill.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates when the Fiscal Impact Summary was processed and uploaded to this bill.</inlineHelpText>
+        <label>LBB FIS Submitted</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Last_Action__c</fullName>
+        <description>Indicates the last action on the Bill within Telicon.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates the last action on the Bill within Telicon.</inlineHelpText>
+        <label>Last Action</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Legislative_Liaison_SLA__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Indicates the Tier A User assignment for this bill.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The assigned Legislative Liaison responsible for the final analysis of this Bill Version.</inlineHelpText>
+        <label>SLA</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Please select the appropriate SLA user.</errorMessage>
+            <filterItems>
+                <field>User.Division__c</field>
+                <operation>equals</operation>
+                <value>SLA</value>
+            </filterItems>
+            <filterItems>
+                <field>$Source.Subject__c</field>
+                <operation>notEqual</operation>
+                <value>null</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Bills</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Link__c</fullName>
+        <externalId>false</externalId>
+        <label>Telicon (TLO) Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Operational_Impact_Analysis__c</fullName>
+        <description>State Legislative Affairs (Tier A) Operational Impact &amp; Analysis Summary.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>State Legislative Affairs&apos; completed Operational Impact &amp; Analysis Summary.</inlineHelpText>
+        <label>Operational Impact &amp; Analysis</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Parent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Parent</label>
+        <referenceTo>LTA_Bill__c</referenceTo>
+        <relationshipName>Parent</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Division__c</fullName>
+        <description>Indicates which Division has the primary responsibility for this bill.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates which Division has the primary responsibility for this bill.</inlineHelpText>
+        <label>Primary Division</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Division</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SLA_Analysis__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This lookup will allow for auto-creation of the Tier A SLA Bill Analysis.</description>
+        <externalId>false</externalId>
+        <label>SLA Analysis</label>
+        <referenceTo>LTA_Bill_Analysis__c</referenceTo>
+        <relationshipName>Bills</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>This indicates the SLA&apos;s Bill Analysis review status.</description>
+        <externalId>false</externalId>
+        <formula>TEXT( SLA_Analysis__r.Review_Status__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This indicates the SLA&apos;s Bill Analysis review status.</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Subject__c</fullName>
+        <description>Indicates the proposed bill&apos;s subject categorization.</description>
+        <externalId>false</externalId>
+        <label>TxDOT Subject Track</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Appropriations</fullName>
+                    <default>false</default>
+                    <label>Appropriations</label>
+                </value>
+                <value>
+                    <fullName>Bike/Ped</fullName>
+                    <default>false</default>
+                    <label>Bike/Ped</label>
+                </value>
+                <value>
+                    <fullName>Construction/Letting</fullName>
+                    <default>false</default>
+                    <label>Construction/Letting</label>
+                </value>
+                <value>
+                    <fullName>Contracting (Goods &amp; Non.Prof. Services)</fullName>
+                    <default>false</default>
+                    <label>Contracting (Goods &amp; Non.Prof. Services)</label>
+                </value>
+                <value>
+                    <fullName>DB/CDA</fullName>
+                    <default>false</default>
+                    <label>DB/CDA</label>
+                </value>
+                <value>
+                    <fullName>Eminent Domain</fullName>
+                    <default>false</default>
+                    <label>Eminent Domain</label>
+                </value>
+                <value>
+                    <fullName>Energy Sector</fullName>
+                    <default>false</default>
+                    <label>Energy Sector</label>
+                </value>
+                <value>
+                    <fullName>Federal Compliance (Funding - CDL)</fullName>
+                    <default>false</default>
+                    <label>Federal Compliance (Funding - CDL)</label>
+                </value>
+                <value>
+                    <fullName>Federal Compliance (Funding - Traffic Safety)</fullName>
+                    <default>false</default>
+                    <label>Federal Compliance (Funding - Traffic Safety)</label>
+                </value>
+                <value>
+                    <fullName>Federal Compliance (OS/OW)</fullName>
+                    <default>false</default>
+                    <label>Federal Compliance (OS/OW)</label>
+                </value>
+                <value>
+                    <fullName>Federal Compliance (Other)</fullName>
+                    <default>false</default>
+                    <label>Federal Compliance (Other)</label>
+                </value>
+                <value>
+                    <fullName>High-Speed Rail</fullName>
+                    <default>false</default>
+                    <label>High-Speed Rail</label>
+                </value>
+                <value>
+                    <fullName>Highway Memorial Designation</fullName>
+                    <default>false</default>
+                    <label>Highway Memorial Designation</label>
+                </value>
+                <value>
+                    <fullName>HR</fullName>
+                    <default>false</default>
+                    <label>HR</label>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                    <label>IT</label>
+                </value>
+                <value>
+                    <fullName>Local Transp. (Non-TxDOT)</fullName>
+                    <default>false</default>
+                    <label>Local Transp. (Non-TxDOT)</label>
+                </value>
+                <value>
+                    <fullName>Maritime/Ports</fullName>
+                    <default>false</default>
+                    <label>Maritime/Ports</label>
+                </value>
+                <value>
+                    <fullName>Minimum Wage</fullName>
+                    <default>false</default>
+                    <label>Minimum Wage</label>
+                </value>
+                <value>
+                    <fullName>OS/OW</fullName>
+                    <default>false</default>
+                    <label>OS/OW</label>
+                </value>
+                <value>
+                    <fullName>Other (Gen. Gov’t)</fullName>
+                    <default>false</default>
+                    <label>Other (Gen. Gov’t)</label>
+                </value>
+                <value>
+                    <fullName>Other (TxDOT)</fullName>
+                    <default>false</default>
+                    <label>Other (TxDOT)</label>
+                </value>
+                <value>
+                    <fullName>Professional Services (Eng.)</fullName>
+                    <default>false</default>
+                    <label>Professional Services (Eng.)</label>
+                </value>
+                <value>
+                    <fullName>Prop 1/7</fullName>
+                    <default>false</default>
+                    <label>Prop 1/7</label>
+                </value>
+                <value>
+                    <fullName>Report/Study</fullName>
+                    <default>false</default>
+                    <label>Report/Study</label>
+                </value>
+                <value>
+                    <fullName>ROW (Non-ED)</fullName>
+                    <default>false</default>
+                    <label>ROW (Non-ED)</label>
+                </value>
+                <value>
+                    <fullName>Rules, PIA, Open Meetings</fullName>
+                    <default>false</default>
+                    <label>Rules, PIA, Open Meetings</label>
+                </value>
+                <value>
+                    <fullName>SHF</fullName>
+                    <default>false</default>
+                    <label>SHF</label>
+                </value>
+                <value>
+                    <fullName>Special Districts (MUDS)</fullName>
+                    <default>false</default>
+                    <label>Special Districts (MUDS)</label>
+                </value>
+                <value>
+                    <fullName>Sunset Bills</fullName>
+                    <default>false</default>
+                    <label>Sunset Bills</label>
+                </value>
+                <value>
+                    <fullName>TERP</fullName>
+                    <default>false</default>
+                    <label>TERP</label>
+                </value>
+                <value>
+                    <fullName>TMF</fullName>
+                    <default>false</default>
+                    <label>TMF</label>
+                </value>
+                <value>
+                    <fullName>Toll</fullName>
+                    <default>false</default>
+                    <label>Toll</label>
+                </value>
+                <value>
+                    <fullName>Traffic Safety</fullName>
+                    <default>false</default>
+                    <label>Traffic Safety</label>
+                </value>
+                <value>
+                    <fullName>Transp. Tech &amp; CAV</fullName>
+                    <default>false</default>
+                    <label>Transp. Tech &amp; CAV</label>
+                </value>
+                <value>
+                    <fullName>UTP/Planning</fullName>
+                    <default>false</default>
+                    <label>UTP/Planning</label>
+                </value>
+                <value>
+                    <fullName>Workers Compensation</fullName>
+                    <default>false</default>
+                    <label>Workers Compensation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Telicon_Bill_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID for the Telicon data feed</description>
+        <externalId>true</externalId>
+        <label>Telicon Bill ID</label>
+        <length>13</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>TxDOT Tracked Bill</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Link__c</columns>
+        <columns>Bill_Author__c</columns>
+        <columns>Bill_Version__c</columns>
+        <columns>Bill_Caption__c</columns>
+        <columns>Status__c</columns>
+        <columns>Legislative_Liaison_SLA__c</columns>
+        <columns>Primary_Division__c</columns>
+        <columns>Corollary_Division_s__c</columns>
+        <columns>Impact__c</columns>
+        <columns>LBB_Fiscal_Impact_Statement_Requested__c</columns>
+        <columns>Subject__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Unassigned_Bills</fullName>
+        <columns>NAME</columns>
+        <columns>Link__c</columns>
+        <columns>Bill_Author__c</columns>
+        <columns>Bill_Version__c</columns>
+        <columns>Bill_Caption__c</columns>
+        <columns>Status__c</columns>
+        <columns>Legislative_Liaison_SLA__c</columns>
+        <columns>Primary_Division__c</columns>
+        <columns>Corollary_Division_s__c</columns>
+        <columns>Impact__c</columns>
+        <columns>LBB_Fiscal_Impact_Statement_Requested__c</columns>
+        <columns>Subject__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Legislative_Liaison_SLA__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Unassigned Bills</label>
+    </listViews>
+    <nameField>
+        <label>Bill</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>TxDOT Tracked Bills</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Link__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Bill_Author__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Bill_Version__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Bill_Caption__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Primary_Division__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Corollary_Division_s__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Impact__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

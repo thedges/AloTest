@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <name>if_tier_C</name>
+        <label>if tier C</label>
+        <locationX>541</locationX>
+        <locationY>44</locationY>
+        <defaultConnector>
+            <targetReference>LTA_Division_SME_Owner_Assignment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Tier B</defaultConnectorLabel>
+        <rules>
+            <name>isTier_C</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>BillAnalysis.Division_SME_Analysis__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>scrTierC</targetReference>
+            </connector>
+            <label>Tier C</label>
+        </rules>
+    </decisions>
+    <description>This flow will automatically create a Division SME Analysis (Bill Analysis for the Tier C user assignments) and change ownership.</description>
+    <interviewLabel>LTA Division SME Analysis Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LTA Division SME Analysis Assignment</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>LTA_Create_Division_SME_Analysis_Record</name>
+        <label>Create Division SME Analysis Record</label>
+        <locationX>737</locationX>
+        <locationY>237</locationY>
+        <connector>
+            <targetReference>LTA_Division_SME_Analysis_Owner_Assignment_Complete</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Division_SME_Analysis__c</field>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>LookupUser.recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>LTA_Bill_Analysis__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>BillAnalysis</name>
+        <label>Get Bill Analysis</label>
+        <locationX>398</locationX>
+        <locationY>43</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>if_tier_C</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>LTA_Bill_Analysis__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>LTA_Division_SME_Analysis_Owner_Assignment_Complete</name>
+        <label>Division SME Analysis Owner Assignment Complete</label>
+        <locationX>934</locationX>
+        <locationY>236</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>LTA_Division_SME_Analysis_Complete</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;The Division SME Analysis record has been created and assigned to: &lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;{!LookupUser.recordName}&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>LTA_Division_SME_Owner_Assignment</name>
+        <label>Division SME Analysis Owner Assignment</label>
+        <locationX>549</locationX>
+        <locationY>234</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>LTA_Create_Division_SME_Analysis_Record</targetReference>
+        </connector>
+        <fields>
+            <name>LTA_Division_SME_Assignment_Instructions</name>
+            <fieldText>&lt;p&gt;Please identify the  required Division SME User, click &quot;Finish&quot; and a Division SME Analysis record will be created and assigned to the user you select.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>LookupUser</name>
+            <extensionName>flowruntime:lookup</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>fieldApiName</name>
+                <value>
+                    <stringValue>FlowUserLookup__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Division SME Assignment</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>objectApiName</name>
+                <value>
+                    <stringValue>LTA_Bill_Analysis__c</stringValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>scrTierC</name>
+        <label>Tier C</label>
+        <locationX>709</locationX>
+        <locationY>40</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>dtxtMsg</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;color: rgb(0, 0, 0);&quot;&gt;Division SME Analysis records cannot have a child Bill Analysis.&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>49</locationX>
+        <locationY>24</locationY>
+        <connector>
+            <targetReference>BillAnalysis</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>LTA_Bill_Analysis__c.Id passed in from quick action</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

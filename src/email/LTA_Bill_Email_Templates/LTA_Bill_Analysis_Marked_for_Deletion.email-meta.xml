@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TxDOT_LTA</letterhead>
+    <name>LTA - Bill Analysis Marked for Deletion</name>
+    <style>freeForm</style>
+    <subject>LTA Bill Analysis: {!LTA_Bill_Analysis__c.Name} Marked for Deletion</subject>
+    <textOnly>**TxDOT LTA BILL ANALYSIS MARKED FOR DELETION**
+
+The LTA Bill Analysis {!LTA_Bill_Analysis__c.Name} has been marked for deletion.
+
+Please DELETE this record promptly before the new version for the associated Bill is loaded.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

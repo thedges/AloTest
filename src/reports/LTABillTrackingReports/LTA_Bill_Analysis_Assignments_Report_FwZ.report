@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>LTA_Bill_Analysis__c.Bill_Version__c</field>
+    </columns>
+    <columns>
+        <field>LTA_Bill_Analysis__c.Bill_Caption__c</field>
+    </columns>
+    <columns>
+        <field>LTA_Bill_Analysis__c.Review_Status__c</field>
+    </columns>
+    <columns>
+        <field>LTA_Bill_Analysis__c.Due_Date__c</field>
+    </columns>
+    <columns>
+        <field>LTA_Bill_Analysis__c.Past_Due__c</field>
+    </columns>
+    <description>Displays all Bill Analysis assignments and due date. This report will be scheduled and sent to Bill Analysis Owners to review.</description>
+    <format>Tabular</format>
+    <name>LTA - Bill Analysis Assignments Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$LTA_Bill_Analysis__c@LTA_Bill_Analysis__c.Link_to_Bill__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LTA_Bill_Analysis__c.Due_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

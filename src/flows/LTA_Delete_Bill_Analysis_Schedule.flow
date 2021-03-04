@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <assignments>
+        <description>Add records to the new collection RecordstoDelete</description>
+        <name>Add_records_to_new_list</name>
+        <label>Add records to new list</label>
+        <locationX>676</locationX>
+        <locationY>399</locationY>
+        <assignmentItems>
+            <assignToReference>RecordstoDelete</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_Bill_Analysis</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Bill_Analysis</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>If records found with the Delete Record criteria then proceed</description>
+        <name>Get_Records_not_null</name>
+        <label>Get Records not null</label>
+        <locationX>343</locationX>
+        <locationY>281</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Not_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Bill_Analysis</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_Bill_Analysis</targetReference>
+            </connector>
+            <label>Not Null</label>
+        </rules>
+    </decisions>
+    <description>Gets all Bill Analysis marked for deletion and runs the schedule everyday to perform the delete.</description>
+    <interviewLabel>LTA Delete Bill Analysis Schedule {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LTA Delete Bill Analysis Schedule</label>
+    <loops>
+        <name>Loop_Bill_Analysis</name>
+        <label>Loop Bill Analysis</label>
+        <locationX>557</locationX>
+        <locationY>283</locationY>
+        <collectionReference>Get_Bill_Analysis</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Add_records_to_new_list</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Delete_Bill_Analysis</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>Delete_Bill_Analysis</name>
+        <label>Delete Bill Analysis</label>
+        <locationX>284</locationX>
+        <locationY>446</locationY>
+        <inputReference>RecordstoDelete</inputReference>
+    </recordDeletes>
+    <recordLookups>
+        <description>Get all Bill Analysis that meet the condition</description>
+        <name>Get_Bill_Analysis</name>
+        <label>Get Bill Analysis</label>
+        <locationX>173</locationX>
+        <locationY>294</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Records_not_null</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Delete_Record__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>LTA_Bill_Analysis__c</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>52</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_Bill_Analysis</targetReference>
+        </connector>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2020-11-15</startDate>
+            <startTime>17:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Collection to delete</description>
+        <name>RecordstoDelete</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>LTA_Bill_Analysis__c</objectType>
+    </variables>
+</Flow>

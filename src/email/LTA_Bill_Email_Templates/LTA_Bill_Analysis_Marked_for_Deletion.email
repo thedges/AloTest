@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: center;"><font face="arial"><b>**TxDOT LTA BILL ANALYSIS MARKED FOR DELETION**</b></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><br></font></div><div style=""><font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">The LTA Bill Analysis&nbsp;</font><font face="arial"><b><a href="{!LTA_Bill_Analysis__c.Link}">{!LTA_Bill_Analysis__c.Name}</a>&nbsp;</b></font><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">has been marked for deletion.&nbsp;</span></div><div style=""><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></span></div><div style=""><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Please DELETE this record promptly before the new version for the associated Bill is loaded.</span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div>]]></td>
+</tr>
+</table>

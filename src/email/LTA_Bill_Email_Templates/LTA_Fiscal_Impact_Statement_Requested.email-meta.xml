@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TxDOT_LTA</letterhead>
+    <name>LTA - Fiscal Impact Statement Requested</name>
+    <style>freeForm</style>
+    <subject>Fiscal Impact Statement Requested for {!LTA_Bill__c.Name}</subject>
+    <textOnly>**TxDOT SLA FISCAL IMPACT STATEMENT REQUESTED**
+
+A Legislative Budget Board (LBB) Fiscal Impact Statement has been requested for {!LTA_Bill__c.Name}.
+
+Please click on the Link to Bill below, and upload the completed Fiscal Impact Statement PDF in the Salesforce Legislative Tracking System by navigating to the Files list and clicking &quot;Upload&quot;.
+
+Link to Bill: {!LTA_Bill__c.Name}
+Bill Version: {!LTA_Bill__c.Bill_Version__c}
+Link to TLO: {!LTA_Bill__c.Link__c}
+Bill Caption: {!LTA_Bill__c.Bill_Caption__c}
+Legislative Liaison (SLA): {!LTA_Bill__c.Legislative_Liaison_SLA__c}
+Primary Division: {!LTA_Bill__c.Primary_Division__c}
+Corollary Division(s): {!LTA_Bill__c.Corollary_Division_s__c}
+Date Fiscal Impact Statement Due: {!LTA_Bill__c.Date_LBB_Fiscal_Impact_Statement_Due__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

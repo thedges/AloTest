@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Lightning_Bill_Analysis_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Lightning_Bill_Analysis_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>Compact_Bill_Analysis_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Compact_Bill_Analysis_Layout</fullName>
+        <fields>Link_to_Bill__c</fields>
+        <fields>Name</fields>
+        <fields>Bill_Version__c</fields>
+        <fields>Review_Status__c</fields>
+        <label>Compact Bill Analysis Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Utilized for providing multi-tier analysis for proposed legislative bills.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Assignee__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Tier User assigned</inlineHelpText>
+        <label>Assignee</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Bill_Analyses</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Bill_Author__c</fullName>
+        <externalId>false</externalId>
+        <formula>Link_to_Bill__r.Bill_Author__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bill Author</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_Caption__c</fullName>
+        <externalId>false</externalId>
+        <formula>Link_to_Bill__r.Bill_Caption__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bill Caption</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_Summary__c</fullName>
+        <description>Please provide a brief overall summary of the bill and any differences from the previous version of the bill (if applicable).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please provide a brief overall summary of the bill and any differences from the previous version of the bill (if applicable).</inlineHelpText>
+        <label>Bill Summary</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Bill_Version__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Link_to_Bill__r.Bill_Version__c,
+&quot;FIL&quot;, &quot;1 - Filed&quot;,
+&quot;HCS&quot;, &quot;2 - House Committee Substitute&quot;,
+&quot;ENG&quot;, &quot;3 - Engrossed&quot;,
+&quot;SCS&quot;, &quot;4 - Senate Committee Substitute&quot;,
+&quot;CCR&quot;, &quot;5 - Conference Committee Report&quot;,
+&quot;ENR&quot;, &quot;6 - As Finally Passed (ENR)&quot;,
+NULL)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bill Version</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Corollary_Division_s__c</fullName>
+        <description>Populated by the LTA - Bill Analysis Automation process builder.</description>
+        <externalId>false</externalId>
+        <label>Corollary Division(s)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Delete_Record__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Checking this will indicate that this Bill Analysis should be deleted.</inlineHelpText>
+        <label>Delete Record</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Division_SME_Analysis__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Provides the list of Division SME Bill Analysis  (Tier C) records.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provides the list of Division SME Bill Analysis records.</inlineHelpText>
+        <label>Division SME Analysis</label>
+        <referenceTo>LTA_Bill_Analysis__c</referenceTo>
+        <relationshipLabel>Division SME Analysis</relationshipLabel>
+        <relationshipName>Bill_Analyses</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Division__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.Division__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Division</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Due_Date__c</fullName>
+        <description>Indicates when the Bill Analysis is due for this Bill Version.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates when the Bill Analysis is due for this Bill Version.</inlineHelpText>
+        <label>Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Fiscal_Impact_Summary__c</fullName>
+        <description>Please provide a brief summary of potential fiscal impact to TxDOT. (THIS IS NOT A REQUEST FOR AN OFFICIAL FISCAL NOTE; IF TXDOT RECEIVES A REQUEST FROM THE LBB, YOU WILL RECEIVE A SEPARATE REQUEST FOR A FISCAL NOTE (APART FROM THIS SUMMARY).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please provide a brief summary of potential fiscal impact to TxDOT. (THIS IS NOT A REQUEST FOR AN OFFICIAL FISCAL NOTE; IF TXDOT RECEIVES A REQUEST FROM THE LBB, YOU WILL RECEIVE A SEPARATE REQUEST FOR A FISCAL NOTE (APART FROM THIS SUMMARY).</inlineHelpText>
+        <label>Fiscal Impact Summary</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Fiscal_Impact__c</fullName>
+        <externalId>false</externalId>
+        <label>Fiscal Impact?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FlowUserLookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Temporary field simply to lookup a user w/ in a flow to assign to Owner since Owner field is not allowed via the Lookup component.</description>
+        <externalId>false</externalId>
+        <label>FlowUserLookup</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>BillAnalyses_FLOW_del</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Link_to_Bill__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Link to Bill</label>
+        <referenceTo>LTA_Bill__c</referenceTo>
+        <relationshipLabel>Bill Analyses</relationshipLabel>
+        <relationshipName>Bill_Analyses</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Operational_Impact_Analysis__c</fullName>
+        <description>Please provide a detailed analysis and objectively explain in detail the bill’s operational impact on TxDOT from the perspective of your division.  Please reference specific sections of the bill when explaining operational impacts.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please provide a detailed analysis and objectively explain in detail the bill’s operational impact on TxDOT from the perspective of your division.  Please reference specific sections of the bill when explaining operational impacts.</inlineHelpText>
+        <label>Operational Impact &amp; Analysis</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Operational_Impact__c</fullName>
+        <description>Indicates whether there is Operational Impact or not.</description>
+        <externalId>false</externalId>
+        <label>Operational Impact?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.FirstName &amp;&quot; &quot;&amp; Owner:User.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Past_Due__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (AND((TEXT(Review_Status__c)) &lt;&gt; &apos;Complete&apos;,(Due_Date__c &lt; TODAY())), &apos;PAST DUE&apos;, null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Past Due</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Division__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Link_to_Bill__r.Primary_Division__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Primary Division</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reporting_Requirement__c</fullName>
+        <description>Indicates whether there is a Reporting Requirement or not.</description>
+        <externalId>false</externalId>
+        <label>Reporting Requirement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Review_Status__c</fullName>
+        <description>Indicates what stage the Bill Analysis is in.</description>
+        <externalId>false</externalId>
+        <label>Review Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tier__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Division_SME_Analysis__c), &quot;B&quot;, &quot;C&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tier</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Title__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.Title__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Title</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Bill Analysis</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Link_to_Bill__c</columns>
+        <columns>NAME</columns>
+        <columns>Bill_Author__c</columns>
+        <columns>Bill_Version__c</columns>
+        <columns>Owner__c</columns>
+        <columns>Review_Status__c</columns>
+        <columns>Due_Date__c</columns>
+        <columns>Bill_Caption__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Assigned_to_Me</fullName>
+        <columns>Link_to_Bill__c</columns>
+        <columns>NAME</columns>
+        <columns>Bill_Author__c</columns>
+        <columns>Bill_Version__c</columns>
+        <columns>Review_Status__c</columns>
+        <columns>Due_Date__c</columns>
+        <columns>Bill_Caption__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>Assigned to Me</label>
+        <sharedTo>
+            <roleAndSubordinates>Government_Affairs_Section</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Completed_Bill_Analysis</fullName>
+        <columns>Link_to_Bill__c</columns>
+        <columns>NAME</columns>
+        <columns>Bill_Version__c</columns>
+        <columns>Review_Status__c</columns>
+        <columns>Bill_Caption__c</columns>
+        <columns>Due_Date__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Review_Status__c</field>
+            <operation>equals</operation>
+            <value>Complete</value>
+        </filters>
+        <label>Assigned to Me: Completed</label>
+        <sharedTo>
+            <roleAndSubordinates>Government_Affairs_Section</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>In_Progress</fullName>
+        <columns>Link_to_Bill__c</columns>
+        <columns>NAME</columns>
+        <columns>Bill_Version__c</columns>
+        <columns>Review_Status__c</columns>
+        <columns>Bill_Caption__c</columns>
+        <columns>Due_Date__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Review_Status__c</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </filters>
+        <label>Assigned to Me: In Progress</label>
+        <sharedTo>
+            <role>Government_Affairs_Section</role>
+            <roleAndSubordinates>Government_Affairs_Section</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>New</fullName>
+        <columns>Link_to_Bill__c</columns>
+        <columns>NAME</columns>
+        <columns>Bill_Version__c</columns>
+        <columns>Review_Status__c</columns>
+        <columns>Bill_Caption__c</columns>
+        <columns>Due_Date__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Review_Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <label>Assigned to Me: New</label>
+        <sharedTo>
+            <roleAndSubordinates>Government_Affairs_Section</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>BA-{00000000}</displayFormat>
+        <label>Bill Analysis Reference Number</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Bill Analyses</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Link_to_Bill__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Bill_Author__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Bill_Version__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Review_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Due_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Bill_Caption__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPDATEDBY_USER</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>Fill_in_fields_before_Completion</fullName>
+        <active>true</active>
+        <description>Before the user updates Review Status to Completed, fill out all necessary fields.</description>
+        <errorConditionFormula>AND(
+    ISPICKVAL(Review_Status__c, &quot;Complete&quot;),
+    OR
+			   (LEN(Bill_Summary__c)=0,
+       ISBLANK(TEXT(Operational_Impact__c)),
+       ISBLANK(TEXT(Fiscal_Impact__c))
+			   )
+				)</errorConditionFormula>
+        <errorMessage>Please fill out all sections before marking this Bill Analysis as Complete.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Fiscal_Impact_Required</fullName>
+        <active>true</active>
+        <description>This validation rule will ensure that if Fiscall Impact? = Yes, the Fiscal Impact field will be required.</description>
+        <errorConditionFormula>AND( 
+				   ISPICKVAL(Fiscal_Impact__c, &quot;Yes&quot;),
+  		   LEN(Fiscal_Impact_Summary__c)=0
+				)</errorConditionFormula>
+        <errorMessage>Please define what the Fiscal Impact is before saving the record.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Operational_Impact_Required</fullName>
+        <active>true</active>
+        <description>This validation rule will ensure that if Operational Impact? = Yes, the Operational Impact field will be required.</description>
+        <errorConditionFormula>AND( 
+				ISPICKVAL(
+								      Operational_Impact__c, &quot;Yes&quot;),
+				LEN(Operational_Impact_Analysis__c)=0
+				)</errorConditionFormula>
+        <errorDisplayField>Operational_Impact_Analysis__c</errorDisplayField>
+        <errorMessage>Please define what the Operational Impact is before saving the record.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>
