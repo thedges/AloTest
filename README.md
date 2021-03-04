@@ -9,3 +9,10 @@ This is a sample package
   <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
+
+Next Button
+
+<a href="https://githubsfdeploy.herokuapp.com?owner=thedges&repo=AlotTest&ref=main">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
