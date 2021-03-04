@@ -4,7 +4,7 @@
         <processMetadataValues>
             <name>emailAlertSelection</name>
             <value>
-                <stringValue>LTA_Bill_Analysis_Marked_for_Deletion2</stringValue>
+                <stringValue>LTA_Bill_Analysis_Marked_for_Deletion</stringValue>
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
